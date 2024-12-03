@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+     
+</head>
+<body>
+      <!-- Menu -->
+  
+      <nav>
+        <ul style="list-style-type: none; text-align:left">
+            <img src="95.png" alt= width="120" height="50" >  
+            <ul>
+                <li><a href="Tela inicial.html"><u>Tela Inicial</u></a></li>
+                <li><a href="quem somos.html">Quem somos</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </ul>
+    </nav>
+    
+
+    <div id="container">
+
+        <!-- Filtro -->
+
+        <div id="filtros">
+            <h3>Qual carro você procura?</h3>
+            <form id="filtro-form">
+                <label for="marca">Marca</label>
+                <select id="marca" name="marca">
+                    <option value="">Todas</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Renault">Renault</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                </select>
+
+                <label for="ano">Ano</label>
+                <select id="ano" name="ano">
+                    <option value="">Todos</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <label for="preco">Preço</label>
+                <select id="preco" name="preco">
+                    <option value="">Todos</option>
+                    <option value="30000">Até R$ 30.000</option>
+                    <option value="50000">Até R$ 50.000</option>
+                    <option value="100000">Até R$ 100.000</option>
+                    <option value="150000">Até R$ 150.000</option>
+                </select>
+
+                <label for="cambio">Câmbio</label>
+                <select id="cambio" name="cambio">
+                    <option value="">Todos</option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automático">Automático</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
+
+       <!-- Carros em Destaque -->
+        <div class="carros-destaque">
+            
+
+            <!-- Exemplo de carro, será dinâmico -->
+        </div>
+
+        <!-- Botões de navegação -->
+
+        <div class="botoes-navegacao">
+            <button id="botao-anterior" class="botao-navegacao">◁</button>
+            <button id="botao-proximo" class="botao-navegacao">▷</button>
+        </div>
+
+    </div>
+
+    <!-- Popup de detalhes -->
+    <div id="popup-detalhes">
+        <div class="popup-content">
+            <h2>Detalhes do Carro</h2>
+            <div id="imagem-carro-modal">
+                <img src="" alt="Imagem do Carro" id="imagem-carro" class="redimensionar">
+            </div>
+            <p id="detalhes-carro"></p>
+            <p id="informacoes-adicionais">
+                Gostaria de ter maiores informações sobre esse carro? 
+                <a href="Contato.html">
+                    Clique aqui
+                </a>
+            </p>
+            <button id="fechar-popup">Fechar</button>
+        </div>
+    </div>
+
+    <script src="scripit.js"></script>
+
+ 

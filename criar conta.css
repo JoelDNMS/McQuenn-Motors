@@ -1,0 +1,149 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do Menu */
+nav {
+    background-color: #333; /* Azul escuro */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #29be1b; /* Amarelo para destaque */
+}
+
+nav img {
+    margin-right: auto;
+}
+
+/* Seção de Contato */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: #ff0404d5;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #01060f;
+    outline: none;
+    background-color: #fff;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #29be1b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+form button:hover {
+    background-color: #ff0000; /* Azul mais escuro */
+}
+
+/* Pequenos Detalhes e Responsividade */
+small {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    form button {
+        padding: 12px;
+    }
+}
